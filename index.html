@@ -203,11 +203,15 @@
           format: "DD/MM/YYYY HH:mm",
           minDate: new Date()
         });
-        $("#commit").click(
-          function() {
-            $("#video").show();
-          }
-        );
+        $(document).ready(function() {
+          $("#commit").click(
+            function() {
+              $("#video").show();
+            }
+
+            //   $("#video").show();
+          );
+        });
 
         $.material.init();
       });
